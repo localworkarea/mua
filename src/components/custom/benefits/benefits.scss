@@ -1,0 +1,88 @@
+// Преимущества — асимметричная «шахматка» из карточек на 12 колонок.
+// Ширина и тон карточки — через item.modifier (benefit--wide /
+// --cool / --dark). Карточки приходят из locals. Используется на
+// странице Bridal.
+
+// .benefits — сетка карточек
+.benefits {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 14px;
+	@media (max-width: 680px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+// .benefit — карточка-преимущество
+.benefit {
+	grid-column: span 3;
+	background: var(--surface-card);
+	border: 1px solid var(--line);
+	border-radius: var(--radius-md);
+	padding: 30px 30px 28px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 30px;
+	min-height: 210px;
+	// .benefit--wide
+	&--wide {
+		grid-column: span 6;
+	}
+	// .benefit--cool
+	&--cool {
+		background: var(--surface-card-cool);
+		border-color: var(--line);
+	}
+	// .benefit--dark
+	&--dark {
+		background: var(--surface-invert);
+		border-color: var(--black);
+		color: var(--white);
+		.benefit__num {
+			color: rgba(255, 255, 255, 0.5);
+		}
+		p {
+			color: var(--on-dark-muted);
+		}
+	}
+	// .benefit__num — порядковый номер
+	&__num {
+		font-family: var(--font-heading);
+		font-size: 14px;
+		font-weight: var(--fw-medium);
+		letter-spacing: 0.06em;
+		color: var(--cool-dark);
+	}
+	h3 {
+		margin: 0 0 9px;
+		font-family: var(--font-heading);
+		font-size: 22px;
+		line-height: 1;
+		letter-spacing: -0.045em;
+		font-weight: var(--fw-medium);
+	}
+	p {
+		margin: 0;
+		font-size: 15.5px;
+		line-height: 1.5;
+		color: var(--muted);
+		max-width: 40ch;
+	}
+	@media (max-width: 900px) {
+		grid-column: span 6;
+		// .benefit--wide на планшете
+		&--wide {
+			grid-column: span 6;
+		}
+	}
+	@media (max-width: 680px) {
+		grid-column: span 1;
+		min-height: auto;
+		gap: 22px;
+		// .benefit--wide на мобильном
+		&--wide {
+			grid-column: span 1;
+		}
+	}
+}

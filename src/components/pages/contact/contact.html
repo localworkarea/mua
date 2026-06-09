@@ -1,0 +1,45 @@
+<include src="@components/custom/page-hero/page-hero.html" locals='{
+	"eyebrow":"Contact / Booking",
+	"title":"Check Availability & Enquire",
+	"intro":"Ready to book or have a question? Fill in the form below and Yana will be in touch. For urgent questions, message on WhatsApp.",
+	"actions":[
+		{"modifier":"btn--primary","href":"#enquiry","label":"Go to enquiry form"},
+		{"modifier":"btn--light","href":"portfolio.html","label":"View portfolio"}
+	],
+	"hasPhoto":false,
+	"photo":{"img":"","alt":"","badgeBold":"","badgeRest":""},
+	"stats":[
+		{"modifier":"","label":"Typical response","value":"< 24h"},
+		{"modifier":"side-stat--light","label":"Fastest option","value":"WhatsApp"},
+		{"modifier":"","label":"To secure a date","value":"Deposit"}
+	]
+}'></include>
+
+<include src="@components/custom/enquiry-form/enquiry-form.html"></include>
+
+<include src="@components/custom/faq/faq.html" locals='{
+	"id":"contact-faq",
+	"sectionMod":"",
+	"modifier":"faq--page",
+	"eyebrow":"Before you send",
+	"title":"Booking questions.",
+	"text":"A few essentials that help your enquiry move quickly.",
+	"items":[
+		{"open":true,"q":"How quickly will I hear back?","a":"Yana aims to respond to all enquiries within 24 hours. For urgent questions, WhatsApp is the fastest option."},
+		{"open":false,"q":"Do I need to pay a deposit to book?","a":"Yes. A deposit is required to secure your date. Details are confirmed after your initial enquiry."},
+		{"open":false,"q":"Is there a travel fee?","a":"Yes, for locations outside central London. The exact fee is calculated based on your area and confirmed before booking."},
+		{"open":false,"q":"How should I prepare for my appointment?","a":"Arrive with clean skin and no makeup if possible. Let Yana know in advance about any skin concerns, allergies, or sensitivities so the appointment can be planned accordingly."}
+	]
+}'></include>
+
+<include src="@components/custom/cta/cta.html" locals='{
+	"dot":"Now booking 2026",
+	"eyebrow":"No obligation",
+	"title":"Check availability now.",
+	"text":"Fast response. Friendly, no-obligation enquiry."
+}'></include>
+
+<include src="@components/custom/brands/brands.html" locals='{
+	"eyebrow":"The kit",
+	"title":"Premium brands, in every look."
+}'></include>

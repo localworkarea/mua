@@ -1,0 +1,28 @@
+<section data-att-testimonials class="section [[modifier]]" id="[[id]]">
+	<div class="container">
+		<div class="sec-head reveal" data-att-watcher data-att-watcher-once>
+			<div>
+				<p class="eyebrow">[[eyebrow]]</p>
+				<h2>[[title]]</h2>
+			</div>
+			<p>[[text]]</p>
+		</div>
+		<div class="testi">
+			<div class="testi__lead reveal" data-att-watcher data-att-watcher-once>
+				<span class="mark" aria-hidden="true">&rdquo;</span>
+				<p>[[lead]]</p>
+			</div>
+			<div class="testi__cards">
+				<each loop="item in items">
+					<article class="testi__card reveal" data-att-watcher data-att-watcher-once>
+						<p>[[item.quote]]</p>
+						<div class="testi__who">
+							<span class="testi__dot"><img class="ph" src="[[item.img]]" alt="[[item.name]]" loading="lazy" /></span>
+							<div><b>[[item.name]]</b><br /><span>[[item.meta]]</span></div>
+						</div>
+					</article>
+				</each>
+			</div>
+		</div>
+	</div>
+</section>

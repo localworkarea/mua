@@ -1,0 +1,23 @@
+<section data-att-feature-rows class="section [[modifier]]">
+	<div class="container">
+		<div class="feature-stack">
+			<each loop="row in rows">
+				<div class="feature-row [[row.reverse]] reveal" data-att-watcher data-att-watcher-once>
+					<article class="feature-card [[row.cardClass]]">
+						<p class="eyebrow [[row.eyebrowClass]]">[[row.eyebrow]]</p>
+						<div>
+							<h3>[[row.title]]</h3>
+							<each loop="para in row.paras"><p>[[para]]</p></each>
+						</div>
+						<if condition="row.foot">
+							<p class="feature-card__foot">[[row.foot]]</p>
+						</if>
+					</article>
+					<div class="feature-row__media">
+						<img class="ph ph--cool" src="[[row.img]]" alt="[[row.alt]]" loading="lazy" />
+					</div>
+				</div>
+			</each>
+		</div>
+	</div>
+</section>

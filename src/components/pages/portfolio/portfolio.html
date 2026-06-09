@@ -1,0 +1,72 @@
+<include src="@components/custom/page-hero/page-hero.html" locals='{
+	"eyebrow":"Portfolio",
+	"title":"Soft Glam & Bridal Makeup by Yana",
+	"intro":"Real clients, real results. Explore signature looks for weddings, events, and photoshoots — from natural soft glam to polished bridal finishes.",
+	"actions":[
+		{"modifier":"btn--primary","href":"contact.html","label":"Check availability"},
+		{"modifier":"btn--light","href":"services.html","label":"View services"}
+	],
+	"hasPhoto":true,
+	"photo":{"img":"@img/work-softglam.jpg","alt":"Soft glam makeup look by Yana","badgeBold":"Real clients","badgeRest":"· Real results"},
+	"stats":[]
+}'></include>
+
+<include src="@components/custom/gallery/gallery.html" locals='{
+	"id":"gallery",
+	"modifier":"section--tight",
+	"eyebrow":"Selected work",
+	"title":"Looks across every occasion.",
+	"text":"Filter by category to explore soft glam, bridal, evening, and photoshoot makeup. In the live build, each tile opens a full project.",
+	"filters":[
+		{"value":"all","label":"All work","active":"is-active"},
+		{"value":"soft-glam","label":"Soft Glam","active":""},
+		{"value":"bridal","label":"Bridal","active":""},
+		{"value":"evening","label":"Evening","active":""},
+		{"value":"photoshoot","label":"Photoshoot","active":""}
+	],
+	"hasFoot":false,
+	"foot":{"text":"","href":"","label":""},
+	"tiles":[
+		{"size":"gtile--wide","cat":"bridal","img":"@img/work-bridal.jpg","alt":"Bridal makeup look","tag":"Bridal","href":"contact.html"},
+		{"size":"gtile--tall","cat":"soft-glam","img":"@img/work-softglam.jpg","alt":"Soft glam makeup look","tag":"Soft Glam","href":"contact.html"},
+		{"size":"gtile--half","cat":"evening","img":"@img/work-evening.jpg","alt":"Evening makeup look","tag":"Evening","href":"contact.html"},
+		{"size":"gtile--half","cat":"photoshoot","img":"@img/work-photoshoot.jpg","alt":"Photoshoot makeup look","tag":"Photoshoot","href":"contact.html"},
+		{"size":"gtile--half","cat":"soft-glam","img":"@img/signature.jpg","alt":"Soft glam mirror look","tag":"Soft Glam","href":"contact.html"},
+		{"size":"gtile--half","cat":"bridal","img":"@img/hero-color.jpg","alt":"Bridal soft glam look","tag":"Bridal","href":"contact.html"},
+		{"size":"gtile--tall","cat":"photoshoot","img":"@img/yana-editorial.jpg","alt":"Editorial makeup look","tag":"Photoshoot","href":"contact.html"},
+		{"size":"gtile--wide","cat":"evening","img":"@img/work-evening.jpg","alt":"Evening event makeup look","tag":"Evening","href":"contact.html"}
+	]
+}'></include>
+
+<include src="@components/custom/services/services.html" locals='{
+	"id":"portfolio-styles",
+	"modifier":"",
+	"eyebrow":"Signature styles",
+	"title":"Three directions, one standard.",
+	"text":"Whatever the occasion, the finish is clean, natural, and built to photograph beautifully.",
+	"items":[
+		{"num":"01","modifier":"","tag":"Everyday luxury","title":"Soft Glam","text":"Clean, refined looks that enhance natural features — a luminous complexion, defined eyes, and a polished finish that photographs beautifully."},
+		{"num":"02","modifier":"svc--dark","tag":"Wedding day","title":"Bridal","text":"Timeless, radiant bridal makeup tailored to each bride’s individual features, skin tone, and wedding-day vision."},
+		{"num":"03","modifier":"","tag":"On camera","title":"Photoshoot & Editorial","text":"Camera-ready looks built for professional shoots — consistent, clean, and adapted to lighting, styling, and creative direction."}
+	]
+}'></include>
+
+<include src="@components/custom/testimonials/testimonials.html" locals='{
+	"id":"reviews",
+	"modifier":"section--tight",
+	"eyebrow":"In their words",
+	"title":"Loved by brides & clients.",
+	"text":"A few words from recent weddings, events, and editorial shoots across London.",
+	"lead":"Every photo looks incredible — and it lasted the entire day.",
+	"items":[
+		{"quote":"The soft glam was exactly what I asked for — natural, but elevated. I felt completely myself, just polished. I couldn’t recommend Yana more.","img":"@img/work-evening.jpg","name":"Amelia","meta":"Bride · Surrey"},
+		{"quote":"Yana did my makeup for an evening event and it held flawlessly from dinner through to the early hours. Beautiful, and so easy to work with.","img":"@img/work-photoshoot.jpg","name":"Nadia","meta":"Evening event · London"}
+	]
+}'></include>
+
+<include src="@components/custom/cta/cta.html" locals='{
+	"dot":"Now booking 2026",
+	"eyebrow":"Your look",
+	"title":"Love what you see?",
+	"text":"Book your look — check availability for your date."
+}'></include>

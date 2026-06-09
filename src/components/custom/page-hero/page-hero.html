@@ -1,0 +1,29 @@
+<section data-att-page-hero class="page-hero">
+	<div class="container page-hero__inner">
+		<div class="page-hero__main reveal" data-att-watcher data-att-watcher-once>
+			<p class="eyebrow">[[eyebrow]]</p>
+			<div>
+				<h1>[[title]]</h1>
+				<p class="page-hero__intro">[[intro]]</p>
+				<div class="page-hero__actions">
+					<each loop="action in actions">
+						<a class="btn [[action.modifier]] btn--lg" href="[[action.href]]" aria-label="[[action.label]]">[[action.label]]</a>
+					</each>
+				</div>
+			</div>
+		</div>
+		<if condition="hasPhoto">
+			<aside class="page-hero__photo reveal" data-att-watcher data-att-watcher-once>
+				<img class="ph ph--cool" src="[[photo.img]]" alt="[[photo.alt]]" fetchpriority="high" />
+				<span class="hero__badge"><b>[[photo.badgeBold]]</b> [[photo.badgeRest]]</span>
+			</aside>
+		</if>
+		<else>
+			<aside class="page-hero__side reveal" data-att-watcher data-att-watcher-once>
+				<each loop="stat in stats">
+					<div class="side-stat [[stat.modifier]]"><span>[[stat.label]]</span><strong>[[stat.value]]</strong></div>
+				</each>
+			</aside>
+		</else>
+	</div>
+</section>

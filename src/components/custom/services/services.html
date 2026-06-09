@@ -1,0 +1,23 @@
+<section data-att-services class="section [[modifier]]" id="[[id]]">
+	<div class="container">
+		<div class="sec-head reveal" data-att-watcher data-att-watcher-once>
+			<div>
+				<p class="eyebrow">[[eyebrow]]</p>
+				<h2>[[title]]</h2>
+			</div>
+			<p>[[text]]</p>
+		</div>
+		<div class="services">
+			<each loop="item in items">
+				<article class="svc [[item.modifier]] reveal" data-att-watcher data-att-watcher-once>
+					<span class="svc__num">[[item.num]]</span>
+					<span class="svc__tag">[[item.tag]]</span>
+					<div class="svc__body">
+						<h3>[[item.title]]</h3>
+						<p>[[item.text]]</p>
+					</div>
+				</article>
+			</each>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,22 @@
+<section data-att-timeline class="section [[modifier]]">
+	<div class="container">
+		<div class="sec-head reveal" data-att-watcher data-att-watcher-once>
+			<div>
+				<p class="eyebrow">[[eyebrow]]</p>
+				<h2>[[title]]</h2>
+			</div>
+			<p>[[text]]</p>
+		</div>
+		<div class="timeline">
+			<each loop="step in steps">
+				<div class="tl-step [[step.modifier]] reveal" data-att-watcher data-att-watcher-once>
+					<span class="tl-step__num">[[step.num]]</span>
+					<div class="tl-step__body">
+						<h3>[[step.title]]</h3>
+						<p>[[step.text]]</p>
+					</div>
+				</div>
+			</each>
+		</div>
+	</div>
+</section>

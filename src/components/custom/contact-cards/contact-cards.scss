@@ -1,0 +1,14 @@
+// Карточки контактов — быстрые заявки через WhatsApp / Email.
+// Сами карточки (.contact__card) стилизованы глобально в style.scss
+// (используются и формой заявки). Здесь — только сетка секции.
+// Список карточек приходит из locals. Используется на Home и Contact.
+
+// .contact — сетка из двух карточек
+.contact {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 14px;
+	@media (max-width: 680px) {
+		grid-template-columns: 1fr;
+	}
+}

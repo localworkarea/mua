@@ -1,0 +1,32 @@
+<section data-att-gallery class="section [[modifier]]" id="[[id]]">
+	<div class="container">
+		<div class="sec-head reveal" data-att-watcher data-att-watcher-once>
+			<div>
+				<p class="eyebrow">[[eyebrow]]</p>
+				<h2>[[title]]</h2>
+			</div>
+			<p>[[text]]</p>
+		</div>
+		<if condition="filters.length">
+			<div class="filters reveal" data-att-watcher data-att-watcher-once role="tablist">
+				<each loop="f in filters">
+					<button class="chip [[f.active]]" type="button" data-filter="[[f.value]]" aria-label="Filter by [[f.label]]">[[f.label]]</button>
+				</each>
+			</div>
+		</if>
+		<div class="gallery">
+			<each loop="tile in tiles">
+				<a class="gtile [[tile.size]] reveal" href="[[tile.href]]" data-cat="[[tile.cat]]" aria-label="[[tile.alt]] — [[tile.tag]]" data-att-watcher data-att-watcher-once>
+					<img class="ph ph--cool" src="[[tile.img]]" alt="[[tile.alt]]" loading="lazy" />
+					<span class="gtile__tag">[[tile.tag]]</span>
+				</a>
+			</each>
+		</div>
+		<if condition="hasFoot">
+			<div class="gallery__foot">
+				<p>[[foot.text]]</p>
+				<a class="btn btn--light" href="[[foot.href]]" aria-label="[[foot.label]]">[[foot.label]]</a>
+			</div>
+		</if>
+	</div>
+</section>

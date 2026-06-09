@@ -1,0 +1,77 @@
+<include src="@components/custom/page-hero/page-hero.html" locals='{
+	"eyebrow":"Services & Pricing",
+	"title":"Makeup Services & Pricing",
+	"intro":"Tailored soft glam and bridal makeup in London and surrounding areas. Transparent pricing, premium brands, and a flexible mobile service — so you know exactly what to expect before you book.",
+	"actions":[
+		{"modifier":"btn--primary","href":"contact.html","label":"Check availability"},
+		{"modifier":"btn--light","href":"portfolio.html","label":"View portfolio"}
+	],
+	"hasPhoto":true,
+	"photo":{"img":"@img/hero-color.jpg","alt":"Soft glam makeup by Yana","badgeBold":"Bridal from £180","badgeRest":"· Mobile across London"},
+	"stats":[]
+}'></include>
+
+<include src="@components/custom/services/services.html" locals='{
+	"id":"service-categories",
+	"modifier":"section--tight",
+	"eyebrow":"Service categories",
+	"title":"Three ways to work together.",
+	"text":"Each service is built around your features, the occasion, and a finish designed to last from the first photo to the last.",
+	"items":[
+		{"num":"01","modifier":"","tag":"Wedding day","title":"Bridal Makeup","text":"Long-lasting, photo-ready makeup for your wedding day — designed around your features, skin tone, and preferred style, from natural glam to something more defined."},
+		{"num":"02","modifier":"svc--dark","tag":"Events & evenings","title":"Special Occasion","text":"Evening events, parties, and celebrations. A polished, feminine look that holds all night."},
+		{"num":"03","modifier":"","tag":"On camera","title":"Photoshoot & Editorial","text":"Clean, camera-ready looks for professional shoots, headshots, and editorial projects. Adapted to your lighting, wardrobe, and creative direction."}
+	]
+}'></include>
+
+<include src="@components/custom/pricing/pricing.html" locals='{
+	"modifier":"",
+	"eyebrow":"Pricing",
+	"title":"Transparent starting prices.",
+	"text":"Clear starting points for each service. The final quote depends on your specific booking details.",
+	"rows":[
+		{"name":"Bridal Makeup","desc":"For the bride — includes consultation & long-wear finish","price":"£180","priceNote":"starting from"},
+		{"name":"Special Occasion Makeup","desc":"Events, parties, evenings out","price":"£100","priceNote":"starting from"},
+		{"name":"Photoshoot Makeup","desc":"Editorial, headshots, creative shoots","price":"£120","priceNote":"starting from"},
+		{"name":"Bridal Trial","desc":"A dedicated appointment to perfect your look","price":"POE","priceNote":"price on enquiry"},
+		{"name":"Bridesmaids / Guests","desc":"Per person, approx. 45 minutes each","price":"POE","priceNote":"price on enquiry"}
+	],
+	"note":"All prices are starting from. Final pricing depends on location, timing, number of people, and any applicable travel fee. Travel fees apply outside central London and are calculated by area."
+}'></include>
+
+<include src="@components/custom/feature-rows/feature-rows.html" locals='{
+	"modifier":"section--tight",
+	"rows":[
+		{"reverse":"","cardClass":"is-dark","eyebrowClass":"eyebrow--white","eyebrow":"Mobile makeup service","title":"Makeup that comes to you.","paras":["Yana travels to your home, hotel, wedding venue, or chosen location across London and the surrounding areas. Travel fees are calculated based on your postcode and confirmed at the time of booking — no hidden costs."],"foot":false,"img":"@img/yana-full.jpg","alt":"Yana, mobile makeup artist on location in London"},
+		{"reverse":"feature-row--reverse","cardClass":"","eyebrowClass":"","eyebrow":"Makeup trial","title":"Why a trial makes a difference.","paras":["A bridal or pre-event trial is a dedicated appointment to perfect your chosen look, test products on your skin, check longevity, and discuss timing for the day itself. Highly recommended for weddings and any occasion where the result needs to be exactly right."],"foot":"Trial pricing available on enquiry.","img":"@img/yana-editorial.jpg","alt":"Bridal makeup trial appointment with Yana"},
+		{"reverse":"","cardClass":"","eyebrowClass":"","eyebrow":"Booking & payment","title":"Simple, straightforward booking.","paras":["To secure your date, a deposit is required at the time of booking. Payment methods and the deposit amount are confirmed during the enquiry process. Cancellation and rescheduling terms are provided at the time of booking."],"foot":"A deposit secures your date.","img":"@img/signature.jpg","alt":"Preparing for a makeup booking with Yana"}
+	]
+}'></include>
+
+<include src="@components/custom/faq/faq.html" locals='{
+	"id":"service-faq",
+	"sectionMod":"",
+	"modifier":"faq--page",
+	"eyebrow":"Good to know",
+	"title":"Service & pricing FAQ.",
+	"text":"The most common questions about what’s included and how pricing works.",
+	"items":[
+		{"open":true,"q":"What’s included in the price?","a":"All makeup application is included. Lashes, travel, and trial sessions are priced separately unless stated otherwise."},
+		{"open":false,"q":"How is the total price calculated?","a":"The starting price covers the makeup service itself. Travel fees, early start charges, and any additions (such as bridesmaids or a trial) are added based on your specific booking details."},
+		{"open":false,"q":"Are lashes included?","a":"False lashes are available on request and may be priced separately. Please mention your preference when enquiring."},
+		{"open":false,"q":"What about sensitive skin?","a":"Please mention any allergies, sensitivities, or skin concerns when you enquire. A trial is particularly recommended if you have reactive skin — it allows time to test products and discuss alternatives."},
+		{"open":false,"q":"How do I book?","a":"Send an enquiry with your event date, location, number of people, and preferred style. Yana will confirm availability, provide pricing, and send deposit details to secure the date."}
+	]
+}'></include>
+
+<include src="@components/custom/cta/cta.html" locals='{
+	"dot":"Now booking 2026",
+	"eyebrow":"Your date",
+	"title":"Want to know what’s available for your date?",
+	"text":"Fast response. No obligation."
+}'></include>
+
+<include src="@components/custom/brands/brands.html" locals='{
+	"eyebrow":"The kit",
+	"title":"Premium brands, in every look."
+}'></include>
