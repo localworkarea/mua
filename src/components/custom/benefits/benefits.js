@@ -1,1 +1,0 @@
-import './benefits.scss'
